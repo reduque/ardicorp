@@ -1,0 +1,22 @@
+ALTER TABLE `clientes` ADD COLUMN `nombre1` VARCHAR(60) AFTER `direccion`,
+ ADD COLUMN `area1` VARCHAR(40) AFTER `nombre1`,
+ ADD COLUMN `telefono1` VARCHAR(20) AFTER `area1`,
+ ADD COLUMN `nombre2` VARCHAR(60) AFTER `telefono1`,
+ ADD COLUMN `area2` VARCHAR(40) AFTER `nombre2`,
+ ADD COLUMN `telefono2` VARCHAR(20) AFTER `area2`,
+ ADD COLUMN `nombre3` VARCHAR(60) AFTER `telefono2`,
+ ADD COLUMN `area3` VARCHAR(40) AFTER `nombre3`,
+ ADD COLUMN `telefono3` VARCHAR(20) AFTER `area3`;
+
+
+ALTER TABLE `contenedors` ADD `id_ano` INT(2) NOT NULL AFTER `id`, ADD `id_numero` INT(4) NOT NULL AFTER `id_ano`;
+ALTER TABLE `productos` ADD `id_ano` INT(2) NOT NULL AFTER `id`, ADD `id_numero` INT(4) NOT NULL AFTER `id_ano`;
+ALTER TABLE `contenedors` ADD `producto_id1` INT NOT NULL DEFAULT '0' AFTER `permiso_id`, ADD `producto_id2` INT NOT NULL DEFAULT '0' AFTER `producto_id1`, ADD `producto_id3` INT NOT NULL DEFAULT '0' AFTER `producto_id2`;
+
+
+Colombia target en noticias
+
+futbol base
+noticias asociadas a calendario
+aplauso_equipo
+aplausos en general revisar
